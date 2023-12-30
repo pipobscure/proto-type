@@ -5,7 +5,7 @@
   "scripts": {
     "build": "tsc --build && chmod u+x,g+x,o+x dist/protocol-dts-generator.js",
     "watch": "tsc --watch",
-    "postversion": "git push --tags && git push && npm publish",
+    "postversion": "git push --follow-tags",
     "prepublishOnly": "npm run build"
   },
   "bin": "./dist/protocol-dts-generator.js",

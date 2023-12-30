@@ -1,0 +1,30 @@
+{
+  "name": "@pipobscure/proto-type",
+  "version": "0.0.0",
+  "description": "Protocol Type Generator",
+  "scripts": {
+    "build": "tsc --build && chmod u+x,g+x,o+x dist/protocol-dts-generator.js",
+    "watch": "tsc --watch",
+    "postversion": "git push --tags && git push && npm publish",
+    "prepublishOnly": "npm run build"
+  },
+  "bin": "./dist/protocol-dts-generator.js",
+  "files": [
+    "./dist/protocol-dts-generator.js"
+  ],
+  "keywords": [
+    "Typescript",
+    "JSON",
+    "Protocol"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipobscure/proto-type"
+  },
+  "author": "Philipp Dunkel <pip@pipobscure.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "typescript": "^5.3.3"
+  }
+}

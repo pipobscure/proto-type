@@ -1,6 +1,6 @@
 {
   "name": "@pipobscure/proto-type",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Protocol Type Generator",
   "scripts": {
     "build": "tsc --build && chmod u+x,g+x,o+x dist/protocol-dts-generator.js",
